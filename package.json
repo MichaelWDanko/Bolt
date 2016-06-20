@@ -1,0 +1,19 @@
+{
+  "name": "bolt",
+  "version": "1.0.0",
+  "description": "An activity tracking application that is based on conveniance of use and interactivity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelWDanko/Bolt.git"
+  },
+  "author": "Michael W Danko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelWDanko/Bolt/issues"
+  },
+  "homepage": "https://github.com/MichaelWDanko/Bolt#readme"
+}
