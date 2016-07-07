@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "stable"
+before_script:
+  - npm install -g gulp
+script:
+  - gulp images
+  - gulp
+deploy:
+  provider: surge
+  project: ./public/
+  domain: bolt.surge.sh
