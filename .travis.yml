@@ -4,9 +4,8 @@ node_js:
 before_script:
   - npm install -g gulp
 script:
-  - gulp images
   - gulp
+  - gulp images
 deploy:
   provider: surge
   project: ./public/
-  domain: bolt.surge.sh
