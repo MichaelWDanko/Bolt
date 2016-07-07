@@ -7,7 +7,7 @@ script:
   - gulp
   - gulp images
   - ls ./public/
-deploy.skip_cleanup: true
 deploy:
+  skip_cleanup: true    
   provider: surge
   project: ./public/
