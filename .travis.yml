@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "stable"
+before_script:
+  - npm install -g gulp
+  - npm install --global surge
+script:
+  - gulp images
+  - gulp
+after_success:
+  - surge ./public
