@@ -7,5 +7,8 @@ before_script:
 script:
   - gulp images
   - gulp
-after_success:
-  - surge ./public
+
+deploy:
+  provider: surge
+  project: ./public/
+  domain: bolt.surge.sh
