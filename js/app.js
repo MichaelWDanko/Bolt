@@ -33,11 +33,15 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 app.controller('WelcomeController', ['$scope', '$http', 'BoltService', '$routeParams', function ($scope, $http, BoltService, $routeParams) {
     
+    console.log('Switched to WelcomeController');
+    
     $scope.test = 'welcome';
     
 }]);
 
 app.controller('NewUserController', ['$scope', '$http', 'BoltService', '$routeParams', function ($scope, $http, BoltService, $routeParams) {
+    
+    console.log('Switched to NewUserController');
     
     $scope.test = 'new';
     
@@ -45,11 +49,15 @@ app.controller('NewUserController', ['$scope', '$http', 'BoltService', '$routePa
 
 app.controller('TodayController', ['$scope', '$http', 'BoltService', '$routeParams', function ($scope, $http, BoltService, $routeParams) {
     
+    console.log('Switched to TodayController');
+    
     $scope.test = 'today';
     
 }]);
 
 app.controller('HistoryController', ['$scope', '$http', 'BoltService', '$routeParams', function ($scope, $http, BoltService, $routeParams) {
+    
+    console.log('Switched to HistoryController');
     
     $scope.test = 'history';
     

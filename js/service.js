@@ -3,9 +3,9 @@ module.exports = (function () {
     
     service.factory('BoltService', function ($http) {
 
-        return {
+    return {
     
-        };
+    };
     
     });
 })();

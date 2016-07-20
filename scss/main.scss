@@ -22,6 +22,9 @@ body {
 }
 
 #content {
+    height: 85%
+}
+main {
     @include background-image(linear-gradient(-180deg, #29CCDE 0%, #129DBA 100%));
     border-radius: 8px;
     margin-top: 3%;
@@ -29,4 +32,12 @@ body {
     margin-right: 5%;
     height: 85%;
     overflow: auto;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    .navigations {
+        
+    }   
 }
