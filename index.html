@@ -7,13 +7,18 @@
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body ng-app="boltApp">
+    
     <div id="header">
-        <img src="images/Icon_2x.png" id="logo">
+        <img src="./images/Icon_2x.png" id="logo">
+    </div>
+    <div>
+        <a href="#/welcome">Welcome</a>
+        <a href="#/new">New</a>
+        <a href="#/today">Today</a>
+        <a href="#/history">History</a>
     </div>
     
-    <div ng-app="boltApp" id="content">
-        &nbsp;
-    </div>
+    <div ng-view></div>
 </body>
 </html>

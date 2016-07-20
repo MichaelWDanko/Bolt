@@ -6,7 +6,7 @@ gulp.task('default', ['html', 'js', 'css', 'cname']);
 
 gulp.task('html', function () {
     gulp.src('./sections/*.html')
-        .pipe(gulp.dest('./public/templates/'));
+        .pipe(gulp.dest('./public/sections/'));
     return gulp.src('./*.html')
         .pipe(gulp.dest('./public'));
 });
@@ -35,7 +35,7 @@ gulp.task ('cname', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./*.html', ['html']);
-    gulp.watch('./templates/*.html', ['html']);
+    gulp.watch('./sections/*.html', ['html']);
     gulp.watch('./scss/*.scss', ['css']);
     gulp.watch('./js/*.js', ['js']);
     
